@@ -4432,6 +4432,16 @@ header.story1 {
   background-position: center;
 }
 
+@media only screen and (max-width: 767px) {
+  #dark-overlay {
+    background-color: #0000007a;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
 header.story2 {
   /*background-image: url("../images/portfolio-header.jpg");*/
   background:
@@ -5498,7 +5508,7 @@ ul.portfolio.info-effect {
   position: absolute;
   background: url(../images/story-images-1c.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-color: white;
   height: 100%;
@@ -5509,9 +5519,9 @@ ul.portfolio.info-effect {
   position: absolute;
   background: url(../images/story-images-1b.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-color: white;
+  background-color: none;
   height: 100%;
   left: 0;
 }
@@ -5533,20 +5543,34 @@ ul.portfolio.info-effect {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
-  background-color: white;
+  background-color: none;
   height: 100%;
   left: 0;
 }
 
 .project2-details-image3 {
   position: absolute;
-  background: url(../images/story-images-2c.gif);
+  background: url(../images/story-images-2c.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  background-color: white;
+  height: 100%;
+  left: 0;
+}
+.project2-details-image3::after {
+  content: "";
+  position: absolute;
+  background: url(../images/new-banner-button.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: white;
-  height: 100%;
-  left: 0;
+  height: 200px;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }
 
 .project3-details-image {
@@ -5575,9 +5599,9 @@ ul.portfolio.info-effect {
   position: absolute;
   background: url(../images/story-images-3c.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center left;
-  background-color: white;
+  background-color: none;
   height: 100%;
   left: 0;
 }
@@ -6032,7 +6056,7 @@ ul.portfolio.info-effect {
     margin-top: -30px;
   }
 
-  .project-details-image, .project-details-image2, .project-details-image3, .project-details-image4, .project-details-image5, .project-details-image6 {
+  .project1-details-image, .project1-details-image2, .project1-details-image3, .project1-details-image4, .project1-details-image5, .project1-details-image6 {
     position: relative;
     height: 500px;
   }
