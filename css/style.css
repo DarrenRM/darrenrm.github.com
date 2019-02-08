@@ -1,5 +1,97 @@
 /*------- primary color -------*/
 /*------- end of primary color -------*/
+/* customize hero*/
+.header-content h5 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+}
+.w40  {
+  max-width: 40% !important;
+}
+
+.showcase-title {
+  color: #fff;
+  font-size: 12px;
+}
+
+a.recent-showcase-title {
+  /* color: #c9ffe1; */
+  color: #fff;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.hero-buttons {
+  display:inline-block;
+}
+
+.hero-buttons .btn {
+  font-size: .9rem;
+}
+
+.btn-cta {
+  color: white !important;
+  background-color: #00dbc5 !important;
+  border-color: #00dbc5 !important;
+}
+
+.btn-cta:hover {
+  color: white !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.hero-info {
+  padding-left:55%;
+}
+
+.hero-info .info {
+  margin-bottom: 15px;
+}
+
+.hero-info .info p, .hero-info .info a {
+  font-weight: 700;
+  color: #ffffffb0;
+}
+
+.hero-info .info a:hover {
+  color: #7460ef;
+}
+
+.hero-info .info-title {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.story-hero-title {
+  text-align: left !important;
+  padding-left: 55%;
+}
+
+.story-detail-info {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .story-hero-title, .hero-info {
+    text-align: center !important;
+    margin:0 auto;
+    padding-left: 0;
+  }
+
+}
+
+/*toys*/
+.lh-28 {
+  line-height: 28px;
+}
+.round-corners {
+  border-radius: 3px;
+}
+
 /*------- custom css -------*/
 html {
   height: 100%;
@@ -1388,9 +1480,9 @@ a.btn, a.btn-social {
 }
 
 .btn-info, .btn-info:focus, .btn-info.active, .btn-info:active {
-  color: white !important;
-  background-color: #7460ef !important;
-  border-color: #7460ef !important;
+  color: #e0c8ff !important;
+  background-color: #382d80 !important;
+  border-color: #382d80 !important;
 }
 
 .btn-info:hover, .show > .btn-info.dropdown-toggle {
@@ -3039,7 +3131,7 @@ label.btn-file {
 /* animated hamburger icon */
 .navbar-toggler.menu-text:before {
   content: 'MENU';
-  color: #aaaaaa;
+  color: #fff;
   float: left;
   margin-left: -60px;
   margin-top: 2px;
@@ -3124,7 +3216,7 @@ label.btn-file {
 }
 
 .navbar-toggler .icon-bar {
-  background-color: #aaaaaa;
+  background-color: #fff;
   transform: rotate(0deg) translate(0px, 0px);
   transition: ease all .2s;
 }
@@ -4212,7 +4304,6 @@ footer.dark.bg-primary .social-icons .btn-social:hover {
 
 .footer-list li {
   padding-bottom: 10px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .bg-lightgrey .footer-list li {
@@ -4329,6 +4420,42 @@ header.main-demo {
 header.portfolio-demo {
   /*background-image: url("../images/portfolio-header.jpg");*/
   background-image: linear-gradient(to top right, #755fef , #369fe0, #2cdba2);
+}
+
+header.story1 {
+  /*background-image: url("../images/portfolio-header.jpg");*/
+  background:
+    linear-gradient(to top right, #755fef , #369fe0, #2cdba2),
+    url("../images/story-headers-1.png");
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+}
+
+header.story2 {
+  /*background-image: url("../images/portfolio-header.jpg");*/
+  background:
+    linear-gradient(to top right, #755fef , #369fe0, #2cdba2),
+    url("../images/story-headers-2.png");
+  background-blend-mode: hue;
+  background-size: cover;
+  background-position: center;
+}
+
+header.story3 {
+  /*background-image: url("../images/portfolio-header.jpg");*/
+  background:
+    linear-gradient(to top right, #755fef , #369fe0, #2cdba2),
+    url("../images/story-headers-3.png");
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 767px) {
+  header.story1, header.story2, header.story3 {
+    background-position: left top ;
+  }
 }
 
 header.agency-page {
@@ -5356,9 +5483,20 @@ ul.portfolio.info-effect {
   padding: 50px 0;
 }
 
-.project-details-image {
+.project1-details-image {
   position: absolute;
-  background: url(../images/project-details-image.jpg);
+  background: url(../images/story-images-1a.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: none;
+  height: 100%;
+  left: 0;
+}
+
+.project1-details-image2 {
+  position: absolute;
+  background: url(../images/story-images-1c.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -5367,9 +5505,9 @@ ul.portfolio.info-effect {
   left: 0;
 }
 
-.project-details-image2 {
+.project1-details-image3 {
   position: absolute;
-  background: url(../images/project-details-image-2.jpg);
+  background: url(../images/story-images-1b.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -5378,12 +5516,67 @@ ul.portfolio.info-effect {
   left: 0;
 }
 
-.project-details-image3 {
+.project2-details-image {
   position: absolute;
-  background: url(../images/project-details-image-3.jpg);
+  background: url(../images/story-images-2a.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: none;
+  height: 100%;
+  left: 0;
+}
+
+.project2-details-image2 {
+  position: absolute;
+  background: url(../images/story-images-2b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  background-color: white;
+  height: 100%;
+  left: 0;
+}
+
+.project2-details-image3 {
+  position: absolute;
+  background: url(../images/story-images-2c.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  height: 100%;
+  left: 0;
+}
+
+.project3-details-image {
+  position: absolute;
+  background: url(../images/story-images-3a.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: none;
+  height: 100%;
+  left: 0;
+}
+
+.project3-details-image2 {
+  position: absolute;
+  background: url(../images/story-images-3b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  background-color: white;
+  height: 100%;
+  left: 0;
+}
+
+.project3-details-image3 {
+  position: absolute;
+  background: url(../images/story-images-3c.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
   background-color: white;
   height: 100%;
   left: 0;
@@ -5816,7 +6009,7 @@ ul.portfolio.info-effect {
   }
 
   .header-content {
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .header-content.has-raised-content {
@@ -5840,6 +6033,16 @@ ul.portfolio.info-effect {
   }
 
   .project-details-image, .project-details-image2, .project-details-image3, .project-details-image4, .project-details-image5, .project-details-image6 {
+    position: relative;
+    height: 500px;
+  }
+
+  .project2-details-image, .project2-details-image2, .project2-details-image3, .project2-details-image4, .project2-details-image5, .project2-details-image6 {
+    position: relative;
+    height: 500px;
+  }
+
+  .project3-details-image, .project3-details-image2, .project3-details-image3, .project3-details  -image4, .project3-details-image5, .project3-details-image6 {
     position: relative;
     height: 500px;
   }
@@ -5895,6 +6098,9 @@ ul.portfolio.info-effect {
   }
 
   .w50 {
+    max-width: 100% !important;
+  }
+  .w40  {
     max-width: 100% !important;
   }
 
@@ -6110,7 +6316,15 @@ ul.portfolio.info-effect {
     font-size: 1.5rem;
   }
 
-  .project-details-image, .project-details-image2, .project-details-image3, .project-details-image4, .project-details-image5, .project-details-image6 {
+  .project1-details-image, .project1-details-image2, .project1-details-image3, .project1-details-image4, .project1-details-image5, .project1-details-image6 {
+    height: 300px;
+  }
+
+  .project2-details-image, .project2-details-image2, .project2-details-image3, .project2-details-image4, .project2-details-image5, .project2-details-image6 {
+    height: 300px;
+  }
+
+  .project3-details-image, .project3-details-image2, .project3-details-image3, .project3-details-image4, .project3-details-image5, .project3-details-image6 {
     height: 300px;
   }
 
