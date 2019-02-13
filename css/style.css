@@ -5264,9 +5264,11 @@ ul.portfolio.info-effect {
   opacity: 0.75;
 }
 
-.post-title a {
+.background-title {
   color: #222222;
   font-family: "Montserrat", sans-serif !important;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .post-title a:hover {
